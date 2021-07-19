@@ -18,9 +18,11 @@ fs.readFile('products.csv', async(err,data)=>{
   console.log('\n Conexão estabelecida!')
   // Define o Schema
   const Prod = await db.CriarSchemaProdutos();
-  // Limpa os dados da collection
+  const Order = await db.CriarPedido();
+  // Limpa os dados das collections
   console.log('\n Limpando os dados antigos!')
   await Prod.deleteMany();
+  await Order.deleteMany();
   // Salva os novos dados, e, encerra a conexão com o banco de dados
   await Prod.create(dados);
   console.log('\n Salvo o arquivo de estoque!')
