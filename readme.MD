@@ -5,11 +5,11 @@ Será necessario a criação das variáveis de ambientes para conexão do banco 
 
 ## Carga do estoque
 
-Executando ```shell npm run server:carga``` será lido o arquivo [.csv] (products.csv), e carregado no banco de dados Mongo, existirão mensagens no terminal para um acompanhamento do progresso ```shell Salvo o arquivo de estoque!``` confirma que foram migrados os dados.
+Executando ``` npm run server:carga``` será lido o arquivo [.csv] (products.csv), e carregado no banco de dados Mongo, existirão mensagens no terminal para um acompanhamento do progresso ``` Salvo o arquivo de estoque!``` confirma que foram migrados os dados.
 
 ## API
 
-Após a carga ser concluída, executar o comando ```shell npm run server:dev```, que irá iniciar os endpoints e, o consumos das mensagens eviados do RabbitMQ.
+Após a carga ser concluída, executar o comando ``` npm run server:dev```, que irá iniciar os endpoints e, o consumos das mensagens eviados do RabbitMQ.
 
 ## RabbitMQ
 
@@ -18,4 +18,4 @@ Se for recebida mensagem que iria deixar o estoque negativo foi implementada uma
 
 ## Testes
 
-Se todos os passos funcionarem rodando o ```shell npm run test``` deve exeecutar todos os testes sem erros.
+Se todos os passos funcionarem rodando o ``` npm run test``` deve exeecutar todos os testes sem erros.
